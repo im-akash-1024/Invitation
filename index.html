@@ -108,7 +108,7 @@ button{font-family:inherit;cursor:pointer;border:none;}
   border:1px solid rgba(227,178,60,.5);
   color:var(--gold);
   padding:8px 20px;border-radius:40px;
-  font-size:14px;letter-spacing:.5px;
+  font-size:20px;letter-spacing:.5px;
   margin-bottom:26px;
   backdrop-filter:blur(4px);
 }
@@ -306,6 +306,10 @@ section{padding:90px 20px;position:relative;}
   background:radial-gradient(circle at 35% 30%, #ffdf8a, var(--marigold-deep));
   box-shadow:0 4px 6px rgba(0,0,0,.3);
 }
+.name{
+  font-size: 22px;
+  font-weight: 600;
+}
 
 /* ---------- Footer ---------- */
 footer{
@@ -323,6 +327,7 @@ footer .fine{margin-top:26px;font-size:13px;opacity:.6;}
   0%,100%{transform:scale(1) rotate(-1deg);}
   50%{transform:scale(1.08) rotate(1deg);}
 }
+
 </style>
 </head>
 <body>
@@ -370,6 +375,8 @@ footer .fine{margin-top:26px;font-size:13px;opacity:.6;}
     <div class="couple-card groom">
       <div class="frame"><img src="Groom.jpeg " alt="Ajith" /></div>
       <div class="role">THE GROOM</div>
+      <div class="name">Ajith M </div>
+      <div class="role">            </div>
       <span class="quali">B.Tech IT</span>
     </div>
 
@@ -384,6 +391,8 @@ footer .fine{margin-top:26px;font-size:13px;opacity:.6;}
     <div class="couple-card bride">
       <div class="frame"><img src="Bride.jpeg" alt="Logeshwari" /></div>
       <div class="role">THE BRIDE</div>
+      <div class="name">Logeshwari T</div>
+      <div class="role">            </div>
       <span class="quali">MSc, DMLT</span>
     </div>
   </div>
@@ -418,16 +427,16 @@ footer .fine{margin-top:26px;font-size:13px;opacity:.6;}
     <h2>Our Favourite Moment</h2>
   </div>
   <div class="gallery">
-    <div class="polaroid"><div class="pin"></div><img src="Together1.jpeg" alt="Ajith & Logeshwari" /></div>
+    <div class="polaroid"><div class="pin"></div><img src="Together4.jpeg" alt="Ajith & Logeshwari" /></div>
     <div class="polaroid"><div class="pin"></div><img src="Together2.jpeg" alt="Ajith & Logeshwari" /></div>
-    <div class="polaroid"><div class="pin"></div><img src="Together3.jpeg" alt="Ajith & Logeshwari" /></div>
+    <div class="polaroid"><div class="pin"></div><img src="Together5.jpeg" alt="Ajith & Logeshwari" /></div>
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer>
   <span class="script">With love &amp; blessings</span>
-  <div class="names">Ajith &amp; Logeshwari &bull; 16.11.2026</div>
+  <div class="names">A &amp; L &bull; 16.11.2026</div>
   <svg class="diya" viewBox="0 0 64 64" aria-hidden="true">
     <ellipse cx="32" cy="46" rx="22" ry="9" fill="#e3b23c"/>
     <ellipse cx="32" cy="42" rx="16" ry="6" fill="#ff9d1f"/>
@@ -451,7 +460,7 @@ for(let i=0;i<26;i++){
   const dur = 9 + Math.random()*10;
   const delay = Math.random()*10;
   const drift = (Math.random()*160-80)+'px';
-  const size = 14 + Math.random()*16;
+  const size = 20 + Math.random()*16;
   p.style.left = left+'vw';
   p.style.fontSize = size+'px';
   p.style.setProperty('--drift', drift);
